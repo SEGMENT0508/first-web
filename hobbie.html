@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+       
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-image: linear-gradient(to bottom right, #1e5799, #2989d8, #7db9e8);
+            color: #fff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+            overflow-x: hidden; 
+        }
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            animation: fadeIn 1s ease;
+            margin: 20px; 
+        }
+        h1 {
+            color: #004466;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            text-align: left;
+            color: #000; 
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        li {
+            background: linear-gradient(to bottom right, #66ccff, #00cc99);
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 12px 20px;
+            margin: 10px; 
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        .back-button {
+            background-color: #004466;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .back-button:hover {
+            background-color: #002233;
+        }
+
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+      
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 16px;
+            }
+            li {
+                font-size: 14px;
+                padding: 10px 15px;
+                margin: 5px;
+            }
+            .back-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 14px;
+            }
+            li {
+                font-size: 12px;
+                padding: 8px 10px;
+                margin: 5px;
+            }
+            .back-button {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Hobbies</h1>
+        <p>I have a variety of hobbies that keep me engaged and excited. One of my favorite interests is <strong>Machine Learning</strong> and <strong>Artificial Intelligence</strong>, exploring the possibilities of technology and data. I also have a passion for <strong>football</strong>, both playing and watching matches with enthusiasm.</p>
+        <ul>
+            <li onclick="window.open('https://en.wikipedia.org/wiki/Machine_learning', '_blank');">Machine Learning</li>
+            <li onclick="window.open('https://en.wikipedia.org/wiki/Artificial_intelligence', '_blank');">Artificial Intelligence</li>
+            <li onclick="window.open('https://en.wikipedia.org/wiki/Football', '_blank');">Football</li>
+        </ul>
+        <a href="#" class="back-button" onclick="history.go(-1); return false;">Back</a>
+    </div>
+</body>
+</html>

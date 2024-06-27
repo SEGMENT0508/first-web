@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('asset5.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Changed from height to min-height */
+            overflow-x: hidden; /* Prevent horizontal overflow */
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #004466;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #004466;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            font-size: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .back-button {
+            background-color: #004466;
+            color: #fff;
+            border: none;
+            padding: 14px 24px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .back-button:hover {
+            background-color: #003355;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+            .profile-picture {
+                width: 150px;
+                height: 150px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            th, td {
+                padding: 10px;
+                font-size: 1rem;
+            }
+            .back-button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            .back-button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <img src="asset2.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>About Me</h1>
+        </div>
+        <div style="padding: 0 20px;">
+            <p>Hello! My name is Ayush, and I'm a student with a passion for building innovative solutions. I love exploring new ideas and finding creative ways to solve problems. I'm particularly interested in machine learning and artificial intelligence.</p>
+            <p>When I'm not coding, you can find me playing football, playing chess, or reading about the latest advancements in technology. I'm always looking for new opportunities to learn and grow, and I'm excited to share my experiences and insights with you :)</p>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <h2>Personal Details</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Ayush</td>
+                </tr>
+                <tr>
+                    <th>Interests</th>
+                    <td>Machine Learning, Artificial Intelligence, football, :)</td>
+                </tr>
+            </table>
+        </div>
+        <a href="#" class="back-button" onclick="history.go(-1); return false;">Back</a>
+    </div>
+</body>
+</html>
